@@ -1,0 +1,45 @@
+header {
+    background-color: #607d8b;
+    padding: 10px;
+    color: white;
+    height: 50px;
+    box-shadow: rgb(96 125 139) 0px 4px 6px;
+    background-image: url(./logo.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    padding-left: 70px;
+    background-position: 10px center;
+    position: relative;
+
+    &>h2 {
+        line-height: 30px;
+        display: inline-block;
+        font-size: 16px;
+    }
+}
+
+.main-view {
+    white-space: nowrap;
+
+    &>div {
+        display: inline-block;
+        vertical-align: top;
+        height: calc(100vh - 50px);
+        white-space: normal;
+
+        &.nav {
+            background-color: #ecf0f3;
+            width: 50px;
+        }
+
+        &.menu {
+            background-color: #f9f9f9;
+            width: 250px;
+        }
+
+        &.content {
+            background-color: white;
+            width: calc(100vw - 300px);
+        }
+    }
+}

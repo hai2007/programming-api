@@ -24,7 +24,7 @@ export default class {
             if (modifier.stop) xhtml.stopPropagation(event)
             if (modifier.prevent) xhtml.preventDefault(event)
 
-            binding.value.apply(binding.target, event)
+            binding.value.apply(binding.target, [event])
 
             if (modifier.once) {
                 xhtml.unbind(el, types[0], callback)

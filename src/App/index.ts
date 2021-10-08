@@ -1,6 +1,6 @@
 import { Component } from 'nefbl'
 
-import style from './index.css'
+import style from './index.scss'
 import template from './index.html'
 
 @Component({
