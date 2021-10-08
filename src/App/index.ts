@@ -1,7 +1,7 @@
-import { Component } from 'nefbl';
+import { Component } from 'nefbl'
 
-import style from './index.css';
-import template from './index.html';
+import style from './index.css'
+import template from './index.html'
 
 @Component({
     selector: "app-root",
@@ -11,4 +11,4 @@ import template from './index.html';
 export default class {
 
 
-};
+}
