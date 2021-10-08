@@ -1,0 +1,24 @@
+{
+  "name": "programming-api",
+  "version": "0.1.0",
+  "description": "编程相关API在线快速查询",
+  "scripts": {
+    "start": "npm install && npm run dev",
+    "dev": "webpack-dev-server --config webpack.dev.js",
+    "build": "hai2007_nodejs -d build && webpack --config webpack.prod.js"
+  },
+  "devDependencies": {
+    "@hai2007/algorithm": "^0.6.3",
+    "awesome-typescript-loader": "^5.2.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.3",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "@hai2007/style": "^0.3.0",
+    "nefbl": "^0.1.0"
+  }
+}
