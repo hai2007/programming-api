@@ -8,8 +8,11 @@
     "build": "hai2007_nodejs -d build && webpack --config webpack.prod.js"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
     "@hai2007/algorithm": "^0.6.3",
     "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.1.0",
     "tslib": "^2.3.1",
     "typescript": "^4.4.3",
     "webpack": "^4.41.2",
@@ -20,6 +23,6 @@
   "dependencies": {
     "@hai2007/polyfill": "^0.1.1",
     "@hai2007/style": "^0.3.0",
-    "nefbl": "^0.2.0"
+    "nefbl": "^0.2.1"
   }
 }

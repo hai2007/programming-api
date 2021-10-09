@@ -4,7 +4,10 @@
 </header>
 <div class='main-view'>
     <div class="nav">
-
+        <button val='html' key='0' ui-bind:active='selected[0]=="html"' ui-on:click='changeSelected'></button>
+        <button val='css' key='0' ui-bind:active='selected[0]=="css"' ui-on:click='changeSelected'></button>
+        <button val="javascript" key='0' ui-bind:active='selected[0]=="javascript"'
+            ui-on:click='changeSelected'></button>
     </div>
     <div class="menu">
 
