@@ -18,8 +18,17 @@ export default class {
             selected: reactive([]),
             changeSelected(event) {
                 let target = event.target
+                let deep = +target.getAttribute('key')
 
-                this.selected[target.getAttribute('key')] = target.getAttribute('val')
+                this.selected[deep] = target.getAttribute('val')
+
+                let url = "#"
+                for (let index = 0; index <= deep; index++) {
+                    url += "/" + this.selected[index]
+                }
+
+                window.location.href = url
+
             }
         }
     }

@@ -10,7 +10,83 @@
             ui-on:click='changeSelected'></button>
     </div>
     <div class="menu">
-
+        <ul ui-bind:notshow='selected[0]!="html"'>
+            <li>
+                <span>HTML 标签</span>
+                <ul>
+                    <li>
+                        <span class='click'>meta</span>
+                    </li>
+                    <li>
+                        <span class='click'>link</span>
+                    </li>
+                    <li>
+                        <span class='click'>canvas</span>
+                    </li>
+                    <li>
+                        <span class='click'>svg</span>
+                    </li>
+                    <li>
+                        <span class='click'>video</span>
+                    </li>
+                    <li>
+                        <span class='click'>audio</span>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span>HTML API</span>
+                <ul>
+                    <li>
+                        <span class='click'>Web 存储</span>
+                    </li>
+                    <li>
+                        <span class='click'>Web Workers</span>
+                    </li>
+                    <li>
+                        <span class='click'>拖放</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul ui-bind:notshow='selected[0]!="css"'>
+            <li>
+                <ul>
+                    <li>
+                        <span class='click'>CSS 选择器</span>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span>CSS 属性</span>
+                <ul>
+                    <li>
+                        <span class='click'>box-shadow</span>
+                    </li>
+                    <li>
+                        <span>背景</span>
+                        <ul>
+                            <li>
+                                <span class='click'>background-clip</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul ui-bind:notshow='selected[0]!="javascript"'>
+            <li>
+                <span>JS 对象</span>
+                <ul>
+                    <li>
+                        <span class='click'>Array 数组</span>
+                    </li>
+                    <li>
+                        <span class='click'>String 字符串</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
     <div class="content">
 

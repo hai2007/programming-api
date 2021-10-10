@@ -11,6 +11,7 @@
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
     "@hai2007/algorithm": "^0.6.3",
+    "@hai2007/nodejs": "^1.1.0",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.1.0",
     "tslib": "^2.3.1",
