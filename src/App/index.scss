@@ -68,8 +68,12 @@ header {
             width: 250px;
             padding: 20px 10px;
 
-            [notshow=true] {
+            &>ul {
                 display: none;
+
+                &[notshow=false] {
+                    display: block;
+                }
             }
 
             span {

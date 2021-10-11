@@ -1,5 +1,7 @@
 import { platform } from 'nefbl'
 import normalize from "@hai2007/style/normalize.css"
+import docView from "@hai2007/style/doc-view.css"
+import docView_reDesign from './style/doc-view.scss'
 
 // 兼容文件
 import '@hai2007/polyfill/Promise.js'
@@ -14,7 +16,7 @@ platform({
     el: document.getElementById('root'),
 
     // 全局样式
-    styles: [normalize]
+    styles: [normalize, docView, docView_reDesign]
 
 })
 

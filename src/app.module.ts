@@ -10,12 +10,14 @@ import search from './component/search/index'
 import uiBind from './directive/ui-bind'
 import uiModel from './directive/ui-model'
 import uiOn from './directive/ui-on'
+import uiLazy from './directive/ui-lazy'
+import uiCode from './directive/ui-code'
 
 @Module({
     declarations: [
         AppComponent,
         search,
-        uiBind, uiModel, uiOn
+        uiBind, uiModel, uiOn, uiLazy, uiCode
     ],
     bootstrap: AppComponent
 })

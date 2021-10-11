@@ -15,6 +15,7 @@ module.exports = {
             loader: ['./scss-loader.js']
         }, {
             test: /\.ts$/,
+            exclude: /node_modules/,
             loader: ['awesome-typescript-loader']
         }, {
             test: /\.js$/,

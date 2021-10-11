@@ -15,22 +15,7 @@
                 <span>HTML 标签</span>
                 <ul>
                     <li>
-                        <span class='click'>meta</span>
-                    </li>
-                    <li>
-                        <span class='click'>link</span>
-                    </li>
-                    <li>
-                        <span class='click'>canvas</span>
-                    </li>
-                    <li>
-                        <span class='click'>svg</span>
-                    </li>
-                    <li>
-                        <span class='click'>video</span>
-                    </li>
-                    <li>
-                        <span class='click'>audio</span>
+                        <span class='click' val='meta' key='1' ui-on:click='changeSelected'>meta</span>
                     </li>
                 </ul>
             </li>
@@ -38,13 +23,10 @@
                 <span>HTML API</span>
                 <ul>
                     <li>
-                        <span class='click'>Web 存储</span>
+                        <span class='click' val='storage' key='1' ui-on:click='changeSelected'>Web 存储</span>
                     </li>
                     <li>
-                        <span class='click'>Web Workers</span>
-                    </li>
-                    <li>
-                        <span class='click'>拖放</span>
+                        <span class='click' val='web-workers' key='1' ui-on:click='changeSelected'>Web Workers</span>
                     </li>
                 </ul>
             </li>
@@ -53,7 +35,7 @@
             <li>
                 <ul>
                     <li>
-                        <span class='click'>CSS 选择器</span>
+                        <span class='click' val='selector' key='1' ui-on:click='changeSelected'>CSS 选择器</span>
                     </li>
                 </ul>
             </li>
@@ -61,13 +43,14 @@
                 <span>CSS 属性</span>
                 <ul>
                     <li>
-                        <span class='click'>box-shadow</span>
+                        <span class='click' val='box-shadow' key='1' ui-on:click='changeSelected'>box-shadow</span>
                     </li>
                     <li>
                         <span>背景</span>
                         <ul>
                             <li>
-                                <span class='click'>background-clip</span>
+                                <span class='click' val='background-clip' key='1'
+                                    ui-on:click='changeSelected'>background-clip</span>
                             </li>
                         </ul>
                     </li>
@@ -79,16 +62,14 @@
                 <span>JS 对象</span>
                 <ul>
                     <li>
-                        <span class='click'>Array 数组</span>
+                        <span class='click' val='Array' key='1' ui-on:click='changeSelected'>Array 数组</span>
                     </li>
                     <li>
-                        <span class='click'>String 字符串</span>
+                        <span class='click' val='String' key='1' ui-on:click='changeSelected'>String 字符串</span>
                     </li>
                 </ul>
             </li>
         </ul>
     </div>
-    <div class="content">
-
-    </div>
+    <div class="content" ui-lazy='currentPage'></div>
 </div>
