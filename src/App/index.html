@@ -4,59 +4,12 @@
 </header>
 <div class='main-view'>
     <div class="nav">
-        <button val='html' key='0' ui-bind:active='selected[0]=="html"' ui-on:click='changeSelected'></button>
-        <button val='css' key='0' ui-bind:active='selected[0]=="css"' ui-on:click='changeSelected'></button>
+        <!-- <button val="html" key='0' ui-bind:active='selected[0]=="html"' ui-on:click='changeSelected'></button> -->
+        <!-- <button val="css" key='0' ui-bind:active='selected[0]=="css"' ui-on:click='changeSelected'></button> -->
         <button val="javascript" key='0' ui-bind:active='selected[0]=="javascript"'
             ui-on:click='changeSelected'></button>
     </div>
     <div class="menu">
-        <ul ui-bind:notshow='selected[0]!="html"'>
-            <li>
-                <span>HTML 标签</span>
-                <ul>
-                    <li>
-                        <span class='click' val='meta' key='1' ui-on:click='changeSelected'>meta</span>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <span>HTML API</span>
-                <ul>
-                    <li>
-                        <span class='click' val='storage' key='1' ui-on:click='changeSelected'>Web 存储</span>
-                    </li>
-                    <li>
-                        <span class='click' val='web-workers' key='1' ui-on:click='changeSelected'>Web Workers</span>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <ul ui-bind:notshow='selected[0]!="css"'>
-            <li>
-                <ul>
-                    <li>
-                        <span class='click' val='selector' key='1' ui-on:click='changeSelected'>CSS 选择器</span>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <span>CSS 属性</span>
-                <ul>
-                    <li>
-                        <span class='click' val='box-shadow' key='1' ui-on:click='changeSelected'>box-shadow</span>
-                    </li>
-                    <li>
-                        <span>背景</span>
-                        <ul>
-                            <li>
-                                <span class='click' val='background-clip' key='1'
-                                    ui-on:click='changeSelected'>background-clip</span>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
         <ul ui-bind:notshow='selected[0]!="javascript"'>
             <li>
                 <span>JS 对象</span>
