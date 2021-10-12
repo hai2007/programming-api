@@ -1,8 +1,10 @@
 export default {
-    "_default": "javascript",
+    "_default": "html",
 
     "html": {
+        "_default": "drag",
 
+        "drag": () => import('./html/drag/index'),
     },
 
     "css": {

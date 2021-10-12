@@ -4,12 +4,22 @@
 </header>
 <div class='main-view'>
     <div class="nav">
-        <!-- <button val="html" key='0' ui-bind:active='selected[0]=="html"' ui-on:click='changeSelected'></button> -->
+        <button val="html" key='0' ui-bind:active='selected[0]=="html"' ui-on:click='changeSelected'></button>
         <!-- <button val="css" key='0' ui-bind:active='selected[0]=="css"' ui-on:click='changeSelected'></button> -->
         <button val="javascript" key='0' ui-bind:active='selected[0]=="javascript"'
             ui-on:click='changeSelected'></button>
     </div>
     <div class="menu">
+        <ul ui-bind:notshow='selected[0]!="html"'>
+            <li>
+                <span>HTML 接口</span>
+                <ul>
+                    <li>
+                        <span class='click' val='drag' key='1' ui-on:click='changeSelected'>拖拽</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
         <ul ui-bind:notshow='selected[0]!="javascript"'>
             <li>
                 <span>JS 对象</span>

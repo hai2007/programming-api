@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 接口 / 拖拽</title>
+    <style>
+        .source {
+            border: 2px solid red;
+            padding: 50px;
+            display: inline-block;
+        }
+        .target{
+            height: 200px;
+            border: 1px dashed blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='source' draggable="true">
+        拖拽我<br />(可以打开控制台查看打印信息)
+    </div>
+
+    <div class="target" ondragenter='drop()'></div>
+
+    <script>
+        function drop(){
+            console.log('拖放源被释放到元素内部',event);
+
+            event.dataTransfer.dropEffect='copy';
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 {
   "name": "programming-api",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "编程相关API在线快速查询",
   "scripts": {
     "start": "npm install && npm run dev",

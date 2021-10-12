@@ -1,0 +1,51 @@
+<h2>
+    HTML 接口 / 拖拽
+</h2>
+<p>
+    设置元素属性 draggable=true 即可让元素能够拖放
+</p>
+<h3>
+    拖放源
+</h3>
+<p>
+    也就是被拖放的元素，其中可以定义如下事件：
+</p>
+<ul>
+    <li>
+        <span class="important">dragstart</span>
+        ：拖放源开始被拖放时触发。
+    </li>
+    <li>
+        <span class="important">drag</span>
+        ：拖放源被拖放的过程中触发。
+    </li>
+    <li>
+        <span class="important">dragend</span>
+        ：拖放源在拖放结束时触发。
+    </li>
+</ul>
+<h3>
+    拖放目标
+</h3>
+<p>
+    也就是被拖放的元素到达的目标元素，其中可以定义如下事件：
+</p>
+<ul>
+    <li>
+        <span class="important">dragenter</span>
+        ：拖放源进入元素边界时触发。
+    </li>
+    <li>
+        <span class="important">dragleave</span>
+        ：拖放源离开元素边界时触发。
+    </li>
+    <li>
+        <span class="important">dragover</span>
+        ：拖放源在元素内部时不断被触发。
+    </li>
+    <li>
+        <span class="important">drop</span>
+        ：拖放源被释放到元素内部时触发。
+    </li>
+</ul>
+<button ui-goto-example='drag'>查看用例>>></button>
