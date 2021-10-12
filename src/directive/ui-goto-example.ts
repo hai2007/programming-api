@@ -24,7 +24,7 @@ export default class {
         xhtml.bind(el, 'click', () => {
             examples[binding.exp]().then(data => {
                 localStorage.setItem('hai2007-sweethome-editor-html-code', data.default);
-                xhtml.toNode('<a target="_blank" href="/sweethome/#/editor">打开在线代码演示页面</a>').click();
+                xhtml.toNode('<a target="_blank" href="/SweetHome/#/editor">打开在线代码演示页面</a>').click();
             });
         });
 

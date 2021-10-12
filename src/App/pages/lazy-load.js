@@ -8,7 +8,9 @@ export default {
     },
 
     "css": {
+        "_default": "Gradients",
 
+        "Gradients": () => import('./css/Gradients/index'),
     },
 
     "javascript": {
