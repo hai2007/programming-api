@@ -7,9 +7,9 @@ import AppComponent from './App/index'
 import search from './component/search/index'
 
 // 指令
-import uiBind from './directive/ui-bind'
-import uiModel from './directive/ui-model'
-import uiOn from './directive/ui-on'
+import uiBind from 'sprout-ui/nefbl/directive/ui-bind'
+import uiModel from 'sprout-ui/nefbl/directive/ui-model'
+import uiOn from 'sprout-ui/nefbl/directive/ui-on'
 import uiLazy from './directive/ui-lazy'
 import uiCode from './directive/ui-code'
 import uiGotoExample from './directive/ui-goto-example'
