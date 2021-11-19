@@ -9,7 +9,7 @@ export default class {
 
     $inserted(el, binding) {
 
-        let code = el.innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&')
+        let code = el.innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&').trim()
         let owe = OpenWebEditor({
 
             // 编辑器挂载点

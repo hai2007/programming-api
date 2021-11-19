@@ -11,12 +11,14 @@ export default {
         "_default": "Gradients",
 
         "Gradients": () => import('./css/Gradients/index'),
+        "scss": () => import('./css/SCSS/index'),
     },
 
     "javascript": {
         "_default": "Array",
 
         "Array": () => import('./javascript/Array/index'),
-        "String": () => import('./javascript/String/index')
+        "String": () => import('./javascript/String/index'),
+        "Math": () => import('./javascript/Math/index')
     }
 }

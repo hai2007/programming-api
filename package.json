@@ -1,6 +1,6 @@
 {
   "name": "programming-api",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "编程相关API在线快速查询",
   "scripts": {
     "start": "npm install && npm run dev",
@@ -25,7 +25,7 @@
     "@hai2007/polyfill": "^0.1.1",
     "@hai2007/style": "^0.3.0",
     "@hai2007/tool": "^0.9.1",
-    "nefbl": "^0.2.3",
+    "nefbl": "^0.2.5",
     "open-web-editor": "^0.3.2",
     "sprout-ui": "^0.1.0"
   }

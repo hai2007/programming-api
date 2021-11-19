@@ -69,6 +69,30 @@ header {
             width: 250px;
             padding: 20px 10px;
 
+            a {
+                cursor: pointer;
+                color: rgb(94, 83, 83);
+                text-decoration: underline;
+                position: relative;
+                font-size: 12px;
+
+                &::after {
+                    background-image: url('./image/link.png');
+                    content: " ";
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    position: absolute;
+                    background-size: 60% auto;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                &:hover {
+                    color: rgb(0, 0, 0);
+                }
+            }
+
             &>ul {
                 display: none;
 
