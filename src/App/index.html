@@ -12,6 +12,17 @@
     <div class="menu">
         <ul ui-bind:notshow='selected[0]!="html"'>
             <li>
+                <span>HTML 标签</span>
+                <ul>
+                    <li>
+                        <span class='click' val='canvas' key='1' ui-on:click='changeSelected'>Canvas</span>
+                    </li>
+                    <li>
+                        <span class='click' val='svg' key='1' ui-on:click='changeSelected'>SVG</span>
+                    </li>
+                </ul>
+            </li>
+            <li>
                 <span>HTML 接口</span>
                 <ul>
                     <li>
@@ -73,7 +84,8 @@
                 <span>网络</span>
                 <ul>
                     <li>
-                        <a target="_blank" href='https://hai2007.gitee.io/sweethome/#/notebook_http_status'>HTTP请求响应码</a>
+                        <a target="_blank"
+                            href='https://hai2007.gitee.io/sweethome/#/notebook_http_status'>HTTP请求响应码</a>
                     </li>
                 </ul>
             </li>

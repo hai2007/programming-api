@@ -2,8 +2,10 @@ export default {
     "_default": "html",
 
     "html": {
-        "_default": "drag",
+        "_default": "canvas",
 
+        "canvas": () => import('./html/canvas/index'),
+        "svg": () => import('./html/svg/index'),
         "drag": () => import('./html/drag/index'),
     },
 

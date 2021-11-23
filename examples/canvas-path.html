@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 标签 / Canvas(路径 path)</title>
+</head>
+
+<body>
+
+    <canvas width='300px' height='300px'>非常抱歉，您的浏览器不支持canvas!</canvas>
+
+    <script>
+
+        var painter = document.getElementsByTagName('canvas')[0].getContext('2d');
+
+        painter.fillStyle = 'red';
+        painter.strokeStyle = 'blue';
+        painter.lineWidth = 30;
+
+        painter.beginPath();
+        painter.moveTo(75, 75);
+        painter.lineTo(225, 75);
+        painter.lineTo(150, 200);
+        painter.stroke();
+        painter.fill();
+
+
+    </script>
+
+</body>
+
+</html>

@@ -3,7 +3,7 @@ import { Component } from 'nefbl'
 import template from './index.html'
 
 @Component({
-    selector: "html-drag",
+    selector: "html-canvas",
     template,
     styles: []
 })

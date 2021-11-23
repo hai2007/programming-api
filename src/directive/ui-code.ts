@@ -1,5 +1,5 @@
 import xhtml from '@hai2007/tool/xhtml'
-import OpenWebEditor from '../tool/OpenWebEditor'
+const OpenWebEditor = require('open-web-editor')
 import { Directive } from 'nefbl'
 
 @Directive({
@@ -10,7 +10,7 @@ export default class {
     $inserted(el, binding) {
 
         let code = el.innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&').trim()
-        let owe = OpenWebEditor({
+        let owe = new OpenWebEditor({
 
             // 编辑器挂载点
             el,

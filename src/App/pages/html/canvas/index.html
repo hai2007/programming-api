@@ -1,0 +1,134 @@
+<h2>
+    HTML 标签 / Canvas
+</h2>
+<h3>
+    画笔配置
+</h3>
+<h4>
+    fillStyle / strokeStyle
+</h4>
+<p>
+    属性，值应该是一个颜色字符串，分别用于设置图形的填充颜色和图形轮廓的颜色。
+</p>
+<h4>
+    lineWidth
+</h4>
+<p>
+    属性，值应该是一个数字，用于设置线条的粗细程度。
+</p>
+<h4>
+    setLineDash()
+</h4>
+<p>
+    方法，此方法接受一个数组，来指定线段与间隙的交替。例如：
+</p>
+<pre ui-code>
+    painter.setLineDash([20, 5]);  // [实线长度, 间隙长度]
+</pre>
+<h4>
+    font
+</h4>
+<p>
+    属性，值应该是一个拼接了文字大小和字体的字符串，用于设置文字大小和字体。例如：
+</p>
+<pre ui-code>
+    painter.font = "100px sans-serif";
+</pre>
+<h4>
+    textAlign / textBaseline
+</h4>
+<p>
+    属性，值应该是一个字符串，分别用于设置文字的水平和垂直对齐方式。
+</p>
+<p>
+    水平方向上，可选的值包括：start、end、left、right、center，默认值是start。
+</p>
+<p>
+    垂直方向上，可选的值包括：top、hanging、middle、alphabetic、ideographic、bottom，默认值是alphabetic。
+</p>
+<h3>
+    direction
+</h3>
+<p>
+    属性，设置文字的书写方向，可能的值包括：ltr、rtl、inherit，默认值是inherit。
+</p>
+<h3>
+    绘制方法
+</h3>
+<h4>
+    save / restore
+</h4>
+<p>
+    一个绘图可能会包含一些属性的设置（比如文字大小等），应用一些变换（即移动、旋转和缩放）等，我们称在某一刻前述的这些的信息为
+    <span class="important">状态</span>。
+</p>
+<p>
+    你可以通过
+    <span class="important">save()</span>方法来保存当前状态，
+    后续操作结束以后，再通过
+    <span class="important">restore()</span>方法恢复之前保存的状态。
+</p>
+<p class='warn'>
+    每当save()方法被调用后，当前的状态就被推送到栈中保存。每一次调用restore()方法，上一个保存的状态就从栈中弹出，所有设定都恢复(类似数组的pop())。
+</p>
+<h4>
+    fillText / strokeText
+</h4>
+<p>
+    分别用于绘制填充文字和轮廓文字，拿fillText举例子，语法如下：
+</p>
+<pre ui-code>
+    painter.fillText(text, x, y);
+</pre>
+<p>
+    在指定的 (x,y) 位置填充指定的文本text。
+</p>
+<h4>
+    fillRect / strokeRect
+</h4>
+<p>
+    分别用于绘制填充矩形和轮廓矩形，，拿fillRect举例子，语法如下：
+</p>
+<pre ui-code>
+    painter.fillRect(x, y, width, height);
+</pre>
+<h4>
+    路径 path
+</h4>
+<p>
+    路径不是一种方法，而是一类方法的集合（路径本身你就可以理解成记录笔在纸上走过的轨迹），在开始之前，你可以先看个例子：
+</p>
+<button ui-goto-example='canvas-path'>查看用例>>></button>
+<p>
+    下面，我们来对常用的方法进行解释。
+</p>
+<h5>
+    beginPath()
+</h5>
+<p>
+    一般在生成路径前都会调用这个方法，不然的话，会接着之前的路径生成。
+</p>
+<h5>
+    moveTo(x,y)
+</h5>
+<p>
+    把画笔移动到指定的坐标，相当于路径的起点。
+</p>
+<h5>
+    lineTo(x,y)
+</h5>
+<p>
+    把画笔移动到指定的坐标，和moveTo不同的是，此时笔没有离开纸。
+</p>
+<h5>
+    closePath()
+</h5>
+<p>
+    相当于调用lineTo方法把路径的终点和起点连起来。
+</p>
+<h5>
+    stroke() / fill()
+</h5>
+<p>
+    路径只是记录了笔的轨迹，要最终可以看见，就需要调用上面的方法告诉画布把记录的路径绘制出来。
+</p>
