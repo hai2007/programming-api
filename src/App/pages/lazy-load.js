@@ -14,6 +14,9 @@ export default {
 
         "Gradients": () => import('./css/Gradients/index'),
         "scss": () => import('./css/SCSS/index'),
+        "Transform": () => import('./css/Transform/index'),
+        "Transitions": () => import('./css/Transitions/index'),
+        "Animation": () => import('./css/Animation/index'),
     },
 
     "javascript": {

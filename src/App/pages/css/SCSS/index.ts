@@ -1,12 +1,11 @@
 import { Component } from 'nefbl'
 
-import style from './index.scss'
 import template from './index.html'
 
 @Component({
     selector: "css-scss",
     template,
-    styles: [style]
+    styles: []
 })
 export default class {
 
