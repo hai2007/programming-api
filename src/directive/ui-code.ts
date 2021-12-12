@@ -1,5 +1,5 @@
 import xhtml from '@hai2007/tool/xhtml'
-const OpenWebEditor = require('open-web-editor')
+import OpenWebEditor from 'open-web-editor'
 import { Directive } from 'nefbl'
 
 @Directive({

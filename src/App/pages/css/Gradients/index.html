@@ -1,34 +1,36 @@
-<h2>
-    CSS 属性&值 / 渐变色
-</h2>
-<h3>
-    线性渐变
-</h3>
-<p>
-    你可以定义一个方向和至少两个颜色来定义渐变：
-</p>
-<pre ui-code='css'>background-image: linear-gradient(direction, color-stop1, color-stop2, ...);</pre>
-<p>
-    方向（direction）可以是to bottom、to top、to right、to left、to bottom right等，默认to bottom。
-</p>
-<p>
-    同时，你还可以定义一个角度（用于代替方向）：
-</p>
-<pre ui-code='css'>background-image: linear-gradient(angle, color-stop1, color-stop2);</pre>
-<img src="./image/css3-gradients-deg.jpg" width='300' />
-<p>
-    角度是指水平线和渐变线之间的角度，逆时针方向计算。换句话说，0deg 将创建一个从下到上的渐变，90deg 将创建一个从左到右的渐变。
-</p>
-<p class="warn">
-    但是，请注意很多浏览器（Chrome、Safari、firefox等）的使用了旧的标准，即 0deg 将创建一个从左到右的渐变，90deg 将创建一个从下到上的渐变。换算公式 90 - x = y 其中 x
-    为标准角度，y为非标准角度。
-</p>
-<button ui-goto-example='linear-gradient'>查看用例>>></button>
-<h3>
-    径向渐变
-</h3>
-<pre ui-code='css'>background-image: radial-gradient(shape size at position, start-color, ..., last-color);</pre>
-<p>
-    shape 参数定义了形状。它可以是值 circle 或 ellipse。其中，circle 表示圆形，ellipse 表示椭圆形。默认值是 ellipse。
-</p>
-<button ui-goto-example='radial-gradient'>查看用例>>></button>
+<div class="doc-view">
+    <h2>
+        CSS 属性&值 / 渐变色
+    </h2>
+    <h3>
+        线性渐变
+    </h3>
+    <p>
+        你可以定义一个方向和至少两个颜色来定义渐变：
+    </p>
+    <pre ui-code='css'>background-image: linear-gradient(direction, color-stop1, color-stop2, ...);</pre>
+    <p>
+        方向（direction）可以是to bottom、to top、to right、to left、to bottom right等，默认to bottom。
+    </p>
+    <p>
+        同时，你还可以定义一个角度（用于代替方向）：
+    </p>
+    <pre ui-code='css'>background-image: linear-gradient(angle, color-stop1, color-stop2);</pre>
+    <img src="./image/css3-gradients-deg.jpg" width='300' />
+    <p>
+        角度是指水平线和渐变线之间的角度，逆时针方向计算。换句话说，0deg 将创建一个从下到上的渐变，90deg 将创建一个从左到右的渐变。
+    </p>
+    <p class="warn">
+        但是，请注意很多浏览器（Chrome、Safari、firefox等）的使用了旧的标准，即 0deg 将创建一个从左到右的渐变，90deg 将创建一个从下到上的渐变。换算公式 90 - x = y 其中 x
+        为标准角度，y为非标准角度。
+    </p>
+    <button ui-goto-example='linear-gradient'>查看用例>>></button>
+    <h3>
+        径向渐变
+    </h3>
+    <pre ui-code='css'>background-image: radial-gradient(shape size at position, start-color, ..., last-color);</pre>
+    <p>
+        shape 参数定义了形状。它可以是值 circle 或 ellipse。其中，circle 表示圆形，ellipse 表示椭圆形。默认值是 ellipse。
+    </p>
+    <button ui-goto-example='radial-gradient'>查看用例>>></button>
+</div>
