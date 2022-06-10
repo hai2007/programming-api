@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 属性&值 / Transform</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+
+        .outer {
+            background-color: #e8e7a4;
+            margin: 30px;
+        }
+
+        .inner {
+            background-color: #4dcfd2;
+            margin-left: 50px;
+        }
+
+        /* 第一个 */
+        .demo1 {
+            transform-style: flat;
+            transform: rotateX(120deg);
+        }
+
+        .demo1 .inner {
+            transform: rotateX(-45deg);
+        }
+
+        /* 第二个 */
+        .demo2 {
+            transform-style: preserve-3d;
+            transform: rotateX(120deg);
+        }
+
+        .demo2 .inner {
+            transform: rotateX(-45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer box demo1">
+        <div class="inner box"></div>
+    </div>
+
+    <div class="outer box demo2">
+        <div class="inner box"></div>
+    </div>
+</body>
+
+</html>

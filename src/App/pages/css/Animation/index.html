@@ -14,6 +14,22 @@
     <p>
         规定需要绑定到选择器的 keyframe 名称。
     </p>
+    <p>
+        下面是一个定义的 keyframe 例子：
+    </p>
+    <pre ui-code="css">
+@keyframes myAnim1 {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+    </pre>
     <h3>
         animation-duration
     </h3>
@@ -36,7 +52,7 @@
         animation-iteration-count
     </h3>
     <p>
-        规定动画应该播放的次数。
+        规定动画应该播放的次数。可以是一个数字表示次数，或者是infinite表示无限次（永远）。
     </p>
     <h3>
         animation-direction
